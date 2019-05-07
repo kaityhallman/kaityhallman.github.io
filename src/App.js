@@ -6,7 +6,7 @@ import './App.scss';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className='container'>
         <Route path="/" exact component={MainPage} />
         <Route path={`${process.env.PUBLIC_URL}/resume`} component={Resume} /> 
