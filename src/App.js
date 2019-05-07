@@ -9,7 +9,7 @@ function App() {
     <Router>
       <div className='container'>
         <Route path="/" exact component={MainPage} />
-        <Route path="/resume/" component={Resume} /> 
+        <Route path={`${process.env.PUBLIC_URL}/resume`} component={Resume} /> 
       </div>
     </Router>
   );
