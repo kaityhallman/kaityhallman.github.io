@@ -8,7 +8,7 @@ import ResumeSkillItems from './ResumeSkillItems';
 export default function Resume() {
   return (
     <React.Fragment>
-      <a href='/' className='link'>Back to home</a>
+      <a href='/' className='link back-to-home'>Back to home</a>
       <section className='section'>
         <h1 className='resume-header'>Experience</h1>
         {experienceData.map((resumeItem) => <ResumeExperienceItem key={resumeItem.id} {...resumeItem} />)}
